@@ -4,10 +4,11 @@ import { Dialogs } from '@nativescript/core';
 import { FrameNavigationProp } from "react-nativescript-navigation";
 import { StyleSheet } from "react-nativescript";
 import { MainStackParamList } from "./NavigationParamList";
+import { _NAVIGATION } from "../Static/NavigationPath";
 
 type HomeScreenProps = {
-    route: RouteProp<MainStackParamList, "Home">,
-    navigation: FrameNavigationProp<MainStackParamList, "Home">,
+    route: RouteProp<MainStackParamList, _NAVIGATION.HOME>,
+    navigation: FrameNavigationProp<MainStackParamList, _NAVIGATION.HOME>,
 }
 
 export function HomeScreen({ navigation }: HomeScreenProps) {

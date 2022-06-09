@@ -10,9 +10,9 @@ purpose of the file is to pass control to the app’s first module.
 */
 
 import * as ReactNativeScript from 'react-nativescript'
-import { mainStackNavigator as AppContainer } from './components/Navigator'
+import { Providers } from './Providers'
 
-ReactNativeScript.start(React.createElement(AppContainer, {}, null))
+ReactNativeScript.start(React.createElement(Providers, {}, null))
 
 /*
 Do not place any code after the application has been started as it will not
